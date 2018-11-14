@@ -40,13 +40,6 @@ def get_last_update_id(updates):
     return max(update_ids)
 
 
-def echo_all(updates):
-    for update in updates["result"]:
-        text = update["message"]["text"]
-        chat = update["message"]["chat"]["id"]
-        send_message(text, chat)
-
-
 def get_last_chat_id_and_text(updates):
     num_updates = len(updates["result"])
     last_update = num_updates - 1
