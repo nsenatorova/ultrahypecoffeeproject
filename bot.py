@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-import config
+
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot(config.token)
+token = '651925846:AAFEGuB5AgazCbt2SKBQfZc-bt4yF_kJfTc'
+
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=["choice"])
 def choice(message):
