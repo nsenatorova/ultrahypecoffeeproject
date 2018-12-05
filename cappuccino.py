@@ -33,8 +33,9 @@ def cap_step2(message):
     bot.send_message(message.chat.id, cap_step_2)
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_ready = types.KeyboardButton(text="Dalej - пол.!")
-    keyboard.add(button_ready)
-    bot.send_message(message.chat.id, "Готовы продолжить?", reply_markup=keyboard)
+    button_start = types.KeyboardButton(text="В начало")
+    keyboard.add(button_ready, button_start)
+    bot.send_message(message.chat.id, "Продолжаем??", reply_markup=keyboard)
 
 
 def cap_step3(message):
@@ -42,8 +43,9 @@ def cap_step3(message):
     bot.send_message(message.chat.id, "Нагреваем кружку (обдаем кипятком и вытираем).")
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_ready = types.KeyboardButton(text="Следваща - болг.!")
-    keyboard.add(button_ready)
-    bot.send_message(message.chat.id, "Готовы продолжить?", reply_markup=keyboard)
+    button_start = types.KeyboardButton(text="В начало")
+    keyboard.add(button_ready, button_start)
+    bot.send_message(message.chat.id, "Продолжаем??", reply_markup=keyboard)
 
 
 def cap_step4(message):
