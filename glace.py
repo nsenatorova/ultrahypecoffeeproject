@@ -7,7 +7,7 @@ from telebot import types
 bot = telebot.TeleBot(config.token)
 
 
-def glace(message):
+def glace_hello(message):
     bot.send_message(message.chat.id, "Давайте приготовим кофе-глясе!")
     bot.send_message(message.chat.id, glace_ing)
     bot.send_message(message.chat.id, glace_inv)
