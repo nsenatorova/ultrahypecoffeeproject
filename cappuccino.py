@@ -13,8 +13,9 @@ def cap_hello(message):
     """bot.send_message(message.chat.id, "")"""
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_ready = types.KeyboardButton(text="Дальше!")
-    keyboard.add(button_ready)
-    bot.send_message(message.chat.id, "Продолжаем?", reply_markup=keyboard)
+    button_start = types.KeyboardButton(text="В начало")
+    keyboard.add(button_ready, button_start)
+    bot.send_message(message.chat.id, "Продолжаем??", reply_markup=keyboard)
 
 
 def cap_step1(message):
@@ -22,8 +23,9 @@ def cap_step1(message):
     bot.send_message(message.chat.id, cap_step_1)
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_ready = types.KeyboardButton(text="Farther - англ.!")
-    keyboard.add(button_ready)
-    bot.send_message(message.chat.id, "Готовы?", reply_markup=keyboard)
+    button_start = types.KeyboardButton(text="В начало")
+    keyboard.add(button_ready, button_start)
+    bot.send_message(message.chat.id, "Продолжаем??", reply_markup=keyboard)
 
 
 def cap_step2(message):
@@ -49,8 +51,9 @@ def cap_step4(message):
     bot.send_message(message.chat.id, cap_step_4)
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_ready = types.KeyboardButton(text="Далей - белор.!")
-    keyboard.add(button_ready)
-    bot.send_message(message.chat.id, "Готовы продолжить?", reply_markup=keyboard)
+    button_start = types.KeyboardButton(text="В начало")
+    keyboard.add(button_ready, button_start)
+    bot.send_message(message.chat.id, "Продолжаем??", reply_markup=keyboard)
 
 
 def cap_step5(message):
@@ -58,8 +61,9 @@ def cap_step5(message):
     bot.send_message(message.chat.id, cap_step_5)
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_ready = types.KeyboardButton(text="Следеће - серб.!")
-    keyboard.add(button_ready)
-    bot.send_message(message.chat.id, "Готовы продолжить?", reply_markup=keyboard)
+    button_start = types.KeyboardButton(text="В начало")
+    keyboard.add(button_ready, button_start)
+    bot.send_message(message.chat.id, "Продолжаем??", reply_markup=keyboard)
 
 
 def cap_step6(message):
